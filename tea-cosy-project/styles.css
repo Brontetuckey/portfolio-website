@@ -1,0 +1,248 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: #fff5ee;
+    background-color: #000000;
+    opacity: 0.9;
+    text-align: center;
+}
+
+/* Nav */
+#nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff5ee;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1;
+    background-color: #000000;
+    width: 100%;
+    top: 0;
+    height: 69px;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 10px;
+}
+
+
+#nav img {
+    height: 50px;
+    max-width: 150px;
+    margin-left: 10px;
+    object-fit: contain;
+}
+
+#nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding-left: 0;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+
+#nav ul li {
+    list-style-type: none;
+    display: inline-flex;
+    text-decoration: underline;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+/* mission image and text */
+.mission-container {
+    position: relative;
+    background-image: url('Images/img-mission-background.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-text {
+    background-color: #000000;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+
+
+/* Tea of the month section */
+.tea-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 70px;
+    width: 100%;
+}
+
+.tea-container img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+
+}
+
+.items h4 {
+    margin: 10px 0px 0px 0px;
+}
+
+
+/* Locations */
+.locations {
+    position: relative;
+    background-image: url("Images/img-locations-background.webp");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.locations h2 {
+    margin-top: 0;
+}
+
+.location-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.location-items h4 {
+    font-weight: normal;
+    opacity: 1;
+}
+
+.location-items div {
+    background-color: #000000;
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer {
+    float: left;
+    margin-left: 20px;
+}
+
+.mission-container,
+.locations,
+.tea-container,
+.contact-info {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.tea-container img,
+.mission-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mission-container,
+.tea-container,
+.locations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+section,
+.contact-info {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    #nav img {
+        margin-left: 0px;
+    }
+
+    #nav {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    #nav ul {
+        flex-wrap: nowrap;
+    }
+
+    #nav ul li {
+        white-space: nowrap;
+
+    }
+}
+
+
+
+@media screen and (max-width: 530px) {
+    #nav img {
+        height: 40px;
+    }
+
+    #nav ul li {
+        font-size: 20px;
+    }
+
+    .mission-container,
+    .locations,
+    .tea-container,
+    .contact-info {
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #nav img {
+        height: 30px;
+    }
+
+    #nav ul li {
+        font-size: 15px;
+    }
+
+    #nav ul li a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+}
